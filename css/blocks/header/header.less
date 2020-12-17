@@ -42,13 +42,19 @@
             display: none;
         }
     }
+
+    &_menu__hides {
+        @media @screen-gt-s {
+            display: none;
+        }
+    }
 }
 
 @icons: search, login, menu;
 
 each(@icons, {
     .header-button-icon_@{value} {
-        background-image: url('@{value}.svg');
+        background-image: url('blocks/header/@{value}.svg');
     }
 })
 

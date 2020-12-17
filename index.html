@@ -7,6 +7,33 @@
         <link rel="stylesheet" href="css/styles.less"/>
     </head>
     <body>
+        <div class="secondary-nav">
+            <div class="column-wrapper">
+                <nav class="secondary-nav__container">
+                    <span class="secondary-nav__item">
+                        <a class="secondary-nav__link" href="#">Москва</a>
+                    </span>
+                    <div class="secondary-nav__fill"></div>
+                    <ul class="secondary-menu">
+                        <li class="secondary-menu__item">
+                            <a class="secondary-menu__link" href="#">Шоурум</a>
+                        </li>
+                        <li class="secondary-menu__item">
+                            <a class="secondary-menu__link" href="#">Оплата</a>
+                        </li>
+                        <li class="secondary-menu__item">
+                            <a class="secondary-menu__link" href="#">Доставка</a>
+                        </li>
+                        <li class="secondary-menu__item">
+                            <a class="secondary-menu__link" href="#">Самовывоз</a>
+                        </li>
+                        <li class="secondary-menu__item">
+                            <a class="secondary-menu__link" href="#">Контактная информация</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <header class="header">
             <div class="column-wrapper">
                 <div class="header__content">
@@ -43,7 +70,7 @@
                         </button>
                         <button class="header-button header-button_login">Войти</button>
                     </div>
-                    <div class="header__button">
+                    <div class="header__button header-button-icon_menu__hides">
                         <button class="header-button-icon header-button-icon_menu">
                         Menu
                         </button>
@@ -51,6 +78,33 @@
                 </div>
             </div>
         </header>
+
+        <section class="section-content__dark">
+            <div class="column-wrapper">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="slide slide__active column-row">
+                            <div class="slide_img column column_s-2 column_m-3 column_l-6">
+                                <img src="images/slide-1.png" alt="">
+                            </div>
+                            <div class="slide_content column column_s-2 column_m-3 column_l-6">
+                                <h1 class="heading heading_level-1">Мужская и женская одежда с символикой HeadHunter</h1>
+                                <a class="primary-button" href="#">Перейти в каталог</a>
+                            </div>
+                        </div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button class="dot dot__active"></button>
+                        <button class="dot" onclick=""></button>
+                        <button class="dot" onclick=""></button>
+                        <button class="dot" onclick=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="section-content">
             <div class="column-wrapper">
@@ -117,6 +171,78 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-content__dark">
+            <div class="column-wrapper">
+                <div class="service-content">
+                    <div class="column-row">
+                        <div class="service-item column column_s-2 column_m-2 column_l-4">
+                            <img class="service-icon" src="css/blocks/service/delivery.svg" alt="delivery icon">
+                            <span class="service-item_content">Быстрая доставка по всей России</span>
+                        </div>
+                        <div class="service-item column column_s-2 column_m-2 column_l-4">
+                            <img class="service-icon" src="css/blocks/service/return.svg" alt="return icon">
+                            <span class="service-item_content">100% гарантия возврата и подлинность товара</span>
+                        </div>
+                        <div class="service-item column column_s-2 column_m-2 column_l-4">
+                            <img class="service-icon" src="css/blocks/service/support.svg" alt="support icon">
+                            <span class="service-item_content">Круглосуточная служба поддержки</span>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="column-wrapper">
+                <div class="column-row">
+                    <div class="footer__socials column column_s-2 column_m-3 column_l-4">
+                        <div class="footer__button">
+                            <a class="footer-button-icon footer-button-icon_facebook" href="#">
+                                Facebook
+                            </a>
+                        </div>
+                        <div class="footer__button">
+                            <a class="footer-button-icon footer-button-icon_twitter" href="#">
+                                Twitter
+                            </a>
+                        </div>
+                        <div class="footer__button">
+                            <a class="footer-button-icon footer-button-icon_vk" href="#">
+                                Vk
+                            </a>
+                        </div>
+                        <div class="footer__button">
+                            <a class="footer-button-icon footer-button-icon_instagram" href="#">
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__app column column_s-2 column_m-3 column_l-4">
+                        <div class="footer__app-button">
+                            <a class="footer-button-icon footer-button-icon_app-store" href="#">
+                                App store
+                            </a>
+                        </div>
+                        <div class="footer__app-button">
+                            <a class="footer-button-icon footer-button-icon_google-play" href="#">
+                                Google play
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__logo column column_l-4">
+                        <a href="/">
+                            <img class="logo" src="css/blocks/logo/logo-footer.svg" alt="hh.ru">
+                        </a>
+                    </div>
+                </div>
+                <hr class="footer__delimiter">
+                <div class="footer__copyrights">
+                    <span class="content-line">&copy; 2019 Группа компаний HeadHunter</span>
+                    <span class="content-line">Сегодня на сайте 684&nbsp;978&nbsp;вакансий, 34&nbsp;789&nbsp;747&nbsp;резюме, 858&nbsp;923&nbsp;компании и за неделю 1&nbsp;211&nbsp;363&nbsp;приглашения</span>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/grid.js"></script>
     </body>
