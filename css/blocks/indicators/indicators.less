@@ -1,0 +1,28 @@
+.indicators {
+    margin: 0;
+    height: 8px;
+    display: flex;
+    justify-content: center;
+
+    &__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        margin-right: 4px;
+        background-color: #DFDEDD;
+    
+        &_active {
+            background-color: @color-dark;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

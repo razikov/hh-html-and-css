@@ -1,0 +1,42 @@
+.app-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    @media @screen-gt-s {
+        justify-content: flex-end;
+    }
+
+    @media @screen-gt-m {
+        justify-content: center;
+    }
+
+    &__button-icon-container {
+        margin-right: 8px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__button-icon {
+        background: no-repeat 50% 50%;
+        border: 0;
+        color: @color-white;
+        display: block;
+        width: 36px;
+        height: 36px;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+}
+
+@app_icons: app-store, google-play;
+
+each(@app_icons, {
+    .app-buttons__button-icon_@{value} {
+        width: 140px;
+        height: 40px;
+        background-image: url('blocks/app-buttons/@{value}.svg');
+    }
+})

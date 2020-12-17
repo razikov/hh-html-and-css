@@ -31,19 +31,13 @@
 .header-button-icon {
     background: no-repeat 50% 50%;
     border: 0;
-    color: #fff;
+    color: @color-white;
     width: 30px;
     height: 30px;
     text-indent: -9999px;
     cursor: pointer;
 
     &_login, &_menu {
-        @media @screen-gt-s {
-            display: none;
-        }
-    }
-
-    &_menu__hides {
         @media @screen-gt-s {
             display: none;
         }
@@ -66,7 +60,7 @@ each(@icons, {
     background-color: transparent;
     border-radius: 19px;
     font: 14px/36px Arial, sans-serif;
-    color: #fff;
+    color: @color-white;
     cursor: pointer;
 
     &_login {
@@ -74,6 +68,12 @@ each(@icons, {
 
         @media @screen-gt-s {
             display: inline-block;
+        }
+    }
+    
+    &_visible-s {
+        @media @screen-gt-s {
+            display: none;
         }
     }
 }

@@ -1,108 +1,23 @@
-.carousel-container {
+.carousel {
     position: relative;
-}
 
-.slide {
-    @media @screen-gt-s {
-        flex-direction: row-reverse;
+    &__slide {
+        display: none;
+     
+        &_active {
+            display: flex;
+        }
     }
 
-    &_img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 197px;
-        margin: 0;
-
-        @media @screen-gt-s {
-            height: 226px;
-            margin: 27px 0;
-        }
+    &__indicators {
+        position: absolute;
+        top: 213px;
+        left: 0;
+        right: 0;
     
-        @media @screen-gt-m {
-            height: 360px;
-            margin: 30px 0;
-        }
-
-        & img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    }
-
-    &_content {
-        margin-top: 38px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
         @media @screen-gt-s {
-            margin-top: 0;
-            align-items: start;
-            text-align: left;
+            top: auto;
+            bottom: -10px;
         }
-    }
-}
-
-.carousel-content {
-    margin-top: 38px;
-}
-
-.carousel-indicators {
-    position: absolute;
-    margin: 0;
-    top: 213px;
-    left: 0;
-    right: 0;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-
-    @media @screen-gt-s {
-        top: auto;
-        bottom: -10px;
-    }
-}
-
-.primary-button {
-    padding: 8px 15px;
-    margin-top: -10px;
-    background-color: #0F8FEE;
-    border-radius: 1px;
-    font: 14px/20px Arial, sans-serif;
-    color: #fff;
-    text-decoration: none;
-
-    @media @screen-gt-s {
-        margin-top: 0;
-    }
-
-    &:hover {
-        background-color: #3781D0;
-    }
-
-    &:active {
-        background-color: #3781D0;
-        box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
-    }
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: none;
-    padding: 0;
-    margin: 4px;
-    background-color: #DFDEDD;
-
-    &__active {
-        background-color: #212122;
-    }
-
-    &:focus {
-        outline: none;
     }
 }

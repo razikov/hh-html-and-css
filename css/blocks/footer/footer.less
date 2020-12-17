@@ -2,6 +2,14 @@
     background-color: @color-dark;
     padding-top: 30px;
 
+    &__app-buttons {
+        margin-top: 30px;
+
+        @media @screen-gt-s {
+            margin-top: 0;
+        }
+    }
+
     &__logo {
         display: none;
 
@@ -12,46 +20,13 @@
         }
     }
 
-    &__socials {
-        display: flex;
-        align-items: center;
-    }
-
-    &__button {
-        margin-right: 15px;
-    }
-
-    &__app {
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    
-        @media @screen-gt-s {
-            margin-top: 0;
-            justify-content: flex-end;
-        }
-
-        @media @screen-gt-m {
-            justify-content: center;
-        }
-    }
-
-    &__app-button {
-        margin-right: 8px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-
     &__delimiter {
         margin-top: 30px;
         margin-bottom: 15px;
         padding: 0;
         height: 0;
         border: none;
-        border-top: 1px solid #666666;
+        border-top: 1px solid @color-grey;
         
         @media @screen-gt-s {
             margin-bottom: 30px;
@@ -59,7 +34,7 @@
     }
 
     &__copyrights {
-        color: #999999;
+        color: @color-light-grey;
         display: flex;
         flex-direction: column;
         padding-bottom: 20px;
@@ -73,32 +48,3 @@
         }
     }
 }
-
-.footer-button-icon {
-    display: block;
-    background: no-repeat 50% 50%;
-    border: 0;
-    color: #fff;
-    width: 36px;
-    height: 36px;
-    text-indent: -9999px;
-    cursor: pointer;
-}
-
-@social_icons: facebook, instagram, twitter, vk;
-
-each(@social_icons, {
-    .footer-button-icon_@{value} {
-        background-image: url('blocks/social/@{value}.svg');
-    }
-})
-
-@app_icons: app-store, google-play;
-
-each(@app_icons, {
-    .footer-button-icon_@{value} {
-        width: 140px;
-        height: 40px;
-        background-image: url('blocks/app/@{value}.svg');
-    }
-})
