@@ -36,7 +36,7 @@
 body {
   min-width: 320px;
   margin: 0;
-  font: 14px/1.4 Arial, sans-serif;
+  font: 14px/1.45 Arial, sans-serif;
   color: #333;
 }
 .grid {
@@ -189,6 +189,7 @@ body {
 @media (min-width: 768px) {
   .heading_level-1 {
     font-size: 36px;
+    line-height: 44px;
   }
 }
 .heading_level-2 {
@@ -425,7 +426,7 @@ body {
 .services-item__icon {
   background: no-repeat 50% 50%;
   border: 0;
-  color: #666;
+  color: #666666;
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -612,7 +613,7 @@ body {
 }
 .indicators {
   margin: 0;
-  height: 15px;
+  height: 8px;
   display: flex;
   justify-content: center;
 }
@@ -622,7 +623,7 @@ body {
   border-radius: 50%;
   border: none;
   padding: 0;
-  margin: 4px;
+  margin-right: 4px;
   background-color: #DFDEDD;
 }
 .indicators__dot_active {
@@ -663,7 +664,7 @@ body {
   max-height: 100%;
 }
 .slide__content {
-  margin-top: 38px;
+  margin-top: 39px;
   display: flex;
   flex-direction: column;
   align-items: center;
