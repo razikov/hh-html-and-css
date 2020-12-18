@@ -6,16 +6,30 @@
     color: #fff;
     font-size: 16px;
 
+    &_secondary {
+        color: #000;
+        font-size: 14px;
+    }
+
     &__item {
         margin-left: 20px;
 
         @media @screen-gt-m {
             margin-left: 30px;
         }
+
+        &_secondary {
+            margin-left: 20px;
+        }
     }
 
     &__link {
         color: #fff;
         text-decoration: none;
+
+        &_secondary {
+            color: #609FCF;
+            text-decoration: none;
+        }
     }
 }

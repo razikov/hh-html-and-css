@@ -1,0 +1,55 @@
+.footer {
+    background-color: @color-dark;
+    padding-top: 30px;
+
+    &__app-buttons {
+        display: flex;
+        margin-top: 30px;
+
+        @media @screen-gt-s {
+            margin-top: 0;
+            height: 100%;
+            justify-content: flex-end;
+        }
+    
+        @media @screen-gt-m {
+            justify-content: center;
+        }
+    }
+
+    &__logo {
+        display: none;
+
+        @media @screen-gt-m {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    &__delimiter {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        padding: 0;
+        height: 0;
+        border: none;
+        border-top: 1px solid @color-grey;
+        
+        @media @screen-gt-s {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__copyrights {
+        color: @color-light-grey;
+        padding-bottom: 20px;
+
+        @media @screen-gt-s {
+            padding-bottom: 30px;
+        }
+
+        @media @screen-gt-m {
+            padding-bottom: 35px;
+        }
+    }
+}

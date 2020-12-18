@@ -1,0 +1,21 @@
+.secondary-nav {
+    
+    &__container {
+        display: none;
+        
+        @media @screen-gt-s {
+            display: flex;
+            height: 40px;
+            align-items: center;
+        }
+    }
+
+    &__link {
+        color: @color-grey;
+        text-decoration: none;
+    }
+
+    &__fill {
+        flex-grow: 1;
+    }
+}

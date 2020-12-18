@@ -1,0 +1,23 @@
+.carousel {
+    position: relative;
+
+    &__slide {
+        display: none;
+     
+        &_active {
+            display: flex;
+        }
+    }
+
+    &__indicators {
+        position: absolute;
+        top: 213px;
+        left: 0;
+        right: 0;
+    
+        @media @screen-gt-s {
+            top: auto;
+            bottom: -10px;
+        }
+    }
+}

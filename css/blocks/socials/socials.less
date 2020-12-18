@@ -1,0 +1,28 @@
+.socials {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &__button-icon-container {
+        margin-right: 15px;
+    }
+
+    &__button-icon {
+        background: no-repeat 50% 50%;
+        border: 0;
+        color: @color-white;
+        display: block;
+        width: 36px;
+        height: 36px;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+}
+
+@social_icons: facebook, instagram, twitter, vk;
+
+each(@social_icons, {
+    .socials__button-icon_@{value} {
+        background-image: url('blocks/socials/@{value}.svg');
+    }
+})
