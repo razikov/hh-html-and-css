@@ -3,10 +3,17 @@
     padding-top: 30px;
 
     &__app-buttons {
+        display: flex;
         margin-top: 30px;
 
         @media @screen-gt-s {
             margin-top: 0;
+            height: 100%;
+            justify-content: flex-end;
+        }
+    
+        @media @screen-gt-m {
+            justify-content: center;
         }
     }
 
@@ -35,8 +42,6 @@
 
     &__copyrights {
         color: @color-light-grey;
-        display: flex;
-        flex-direction: column;
         padding-bottom: 20px;
 
         @media @screen-gt-s {
